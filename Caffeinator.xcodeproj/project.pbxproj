@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F4905311ABDC55B00D31DFF /* CaffeineTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F49052D1ABDC55B00D31DFF /* CaffeineTimer.swift */; };
+		1F4905321ABDC55B00D31DFF /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F49052E1ABDC55B00D31DFF /* MenuController.swift */; };
+		1F4905331ABDC55B00D31DFF /* PreferencesScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F49052F1ABDC55B00D31DFF /* PreferencesScreen.xib */; };
+		1F4905341ABDC55B00D31DFF /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4905301ABDC55B00D31DFF /* PreferencesWindowController.swift */; };
+		1FAB3C721ABDC48900073741 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAB3C711ABDC48900073741 /* AppDelegate.swift */; };
+		1FAB3C741ABDC48900073741 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FAB3C731ABDC48900073741 /* Images.xcassets */; };
+		1FAB3C771ABDC48900073741 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FAB3C751ABDC48900073741 /* MainMenu.xib */; };
+		1FAB3C831ABDC48900073741 /* CaffeinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAB3C821ABDC48900073741 /* CaffeinatorTests.swift */; };
+		1FE847821ABE31C5002C0AFE /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE847811ABE31C5002C0AFE /* Preferences.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FAB3C7D1ABDC48900073741 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FAB3C641ABDC48900073741 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FAB3C6B1ABDC48900073741;
+			remoteInfo = Caffeinator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F49052D1ABDC55B00D31DFF /* CaffeineTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaffeineTimer.swift; sourceTree = "<group>"; };
+		1F49052E1ABDC55B00D31DFF /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MenuController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1F49052F1ABDC55B00D31DFF /* PreferencesScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesScreen.xib; sourceTree = "<group>"; };
+		1F4905301ABDC55B00D31DFF /* PreferencesWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PreferencesWindowController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1FAB3C6C1ABDC48900073741 /* Caffeinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caffeinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FAB3C701ABDC48900073741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FAB3C711ABDC48900073741 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1FAB3C731ABDC48900073741 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1FAB3C761ABDC48900073741 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1FAB3C7C1ABDC48900073741 /* CaffeinatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaffeinatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FAB3C811ABDC48900073741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FAB3C821ABDC48900073741 /* CaffeinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeinatorTests.swift; sourceTree = "<group>"; };
+		1FE847811ABE31C5002C0AFE /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FAB3C691ABDC48900073741 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FAB3C791ABDC48900073741 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FAB3C631ABDC48900073741 = {
+			isa = PBXGroup;
+			children = (
+				1FAB3C6E1ABDC48900073741 /* Caffeinator */,
+				1FAB3C7F1ABDC48900073741 /* CaffeinatorTests */,
+				1FAB3C6D1ABDC48900073741 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FAB3C6D1ABDC48900073741 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FAB3C6C1ABDC48900073741 /* Caffeinator.app */,
+				1FAB3C7C1ABDC48900073741 /* CaffeinatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FAB3C6E1ABDC48900073741 /* Caffeinator */ = {
+			isa = PBXGroup;
+			children = (
+				1FAB3C711ABDC48900073741 /* AppDelegate.swift */,
+				1F49052E1ABDC55B00D31DFF /* MenuController.swift */,
+				1F4905301ABDC55B00D31DFF /* PreferencesWindowController.swift */,
+				1F49052D1ABDC55B00D31DFF /* CaffeineTimer.swift */,
+				1FE847811ABE31C5002C0AFE /* Preferences.swift */,
+				1FAB3C731ABDC48900073741 /* Images.xcassets */,
+				1FAB3C751ABDC48900073741 /* MainMenu.xib */,
+				1F49052F1ABDC55B00D31DFF /* PreferencesScreen.xib */,
+				1FAB3C6F1ABDC48900073741 /* Supporting Files */,
+			);
+			path = Caffeinator;
+			sourceTree = "<group>";
+		};
+		1FAB3C6F1ABDC48900073741 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FAB3C701ABDC48900073741 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FAB3C7F1ABDC48900073741 /* CaffeinatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FAB3C821ABDC48900073741 /* CaffeinatorTests.swift */,
+				1FAB3C801ABDC48900073741 /* Supporting Files */,
+			);
+			path = CaffeinatorTests;
+			sourceTree = "<group>";
+		};
+		1FAB3C801ABDC48900073741 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FAB3C811ABDC48900073741 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FAB3C6B1ABDC48900073741 /* Caffeinator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FAB3C861ABDC48900073741 /* Build configuration list for PBXNativeTarget "Caffeinator" */;
+			buildPhases = (
+				1FAB3C681ABDC48900073741 /* Sources */,
+				1FAB3C691ABDC48900073741 /* Frameworks */,
+				1FAB3C6A1ABDC48900073741 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Caffeinator;
+			productName = Caffeinator;
+			productReference = 1FAB3C6C1ABDC48900073741 /* Caffeinator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FAB3C7B1ABDC48900073741 /* CaffeinatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FAB3C891ABDC48900073741 /* Build configuration list for PBXNativeTarget "CaffeinatorTests" */;
+			buildPhases = (
+				1FAB3C781ABDC48900073741 /* Sources */,
+				1FAB3C791ABDC48900073741 /* Frameworks */,
+				1FAB3C7A1ABDC48900073741 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FAB3C7E1ABDC48900073741 /* PBXTargetDependency */,
+			);
+			name = CaffeinatorTests;
+			productName = CaffeinatorTests;
+			productReference = 1FAB3C7C1ABDC48900073741 /* CaffeinatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FAB3C641ABDC48900073741 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = xiphias;
+				TargetAttributes = {
+					1FAB3C6B1ABDC48900073741 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					1FAB3C7B1ABDC48900073741 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 1FAB3C6B1ABDC48900073741;
+					};
+				};
+			};
+			buildConfigurationList = 1FAB3C671ABDC48900073741 /* Build configuration list for PBXProject "Caffeinator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FAB3C631ABDC48900073741;
+			productRefGroup = 1FAB3C6D1ABDC48900073741 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FAB3C6B1ABDC48900073741 /* Caffeinator */,
+				1FAB3C7B1ABDC48900073741 /* CaffeinatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FAB3C6A1ABDC48900073741 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FAB3C741ABDC48900073741 /* Images.xcassets in Resources */,
+				1F4905331ABDC55B00D31DFF /* PreferencesScreen.xib in Resources */,
+				1FAB3C771ABDC48900073741 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FAB3C7A1ABDC48900073741 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FAB3C681ABDC48900073741 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4905311ABDC55B00D31DFF /* CaffeineTimer.swift in Sources */,
+				1F4905321ABDC55B00D31DFF /* MenuController.swift in Sources */,
+				1FE847821ABE31C5002C0AFE /* Preferences.swift in Sources */,
+				1F4905341ABDC55B00D31DFF /* PreferencesWindowController.swift in Sources */,
+				1FAB3C721ABDC48900073741 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FAB3C781ABDC48900073741 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FAB3C831ABDC48900073741 /* CaffeinatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FAB3C7E1ABDC48900073741 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FAB3C6B1ABDC48900073741 /* Caffeinator */;
+			targetProxy = 1FAB3C7D1ABDC48900073741 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FAB3C751ABDC48900073741 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FAB3C761ABDC48900073741 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FAB3C841ABDC48900073741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1FAB3C851ABDC48900073741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1FAB3C871ABDC48900073741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Caffeinator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.merola.Caffeinator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1FAB3C881ABDC48900073741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Caffeinator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.merola.Caffeinator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1FAB3C8A1ABDC48900073741 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CaffeinatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.merola.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Caffeinator.app/Contents/MacOS/Caffeinator";
+			};
+			name = Debug;
+		};
+		1FAB3C8B1ABDC48900073741 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CaffeinatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.merola.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Caffeinator.app/Contents/MacOS/Caffeinator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FAB3C671ABDC48900073741 /* Build configuration list for PBXProject "Caffeinator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FAB3C841ABDC48900073741 /* Debug */,
+				1FAB3C851ABDC48900073741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FAB3C861ABDC48900073741 /* Build configuration list for PBXNativeTarget "Caffeinator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FAB3C871ABDC48900073741 /* Debug */,
+				1FAB3C881ABDC48900073741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FAB3C891ABDC48900073741 /* Build configuration list for PBXNativeTarget "CaffeinatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FAB3C8A1ABDC48900073741 /* Debug */,
+				1FAB3C8B1ABDC48900073741 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FAB3C641ABDC48900073741 /* Project object */;
+}

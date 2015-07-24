@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6751"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Caffeinator" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <customObject id="lG5-FS-cxL" customClass="MenuController" customModule="Caffeinator" customModuleProvider="target">
+            <connections>
+                <outlet property="intervalMenu" destination="LTy-Fc-uHj" id="lQe-zj-JBx"/>
+                <outlet property="mainMenu" destination="gVw-vU-ghc" id="Tnt-m0-e87"/>
+                <outlet property="timeRemainingItem" destination="5AA-q0-MtU" id="OJh-9F-H30"/>
+            </connections>
+        </customObject>
+        <menu id="gVw-vU-ghc">
+            <items>
+                <menuItem title="About" id="0eh-eq-uiG">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showAbout:" target="lG5-FS-cxL" id="R9y-hB-d47"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Preferences" id="vgC-FO-fDe">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showPreferences:" target="lG5-FS-cxL" id="W8A-cp-nPW"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="nhK-DL-QbY"/>
+                <menuItem title="Activate for..." id="1PP-6p-5hH">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Activate for..." id="LTy-Fc-uHj">
+                        <items>
+                            <menuItem title="Active" tag="-1" enabled="NO" id="5AA-q0-MtU">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="ECg-et-qK1"/>
+                            <menuItem title="Indefinitely" id="MbX-da-OVm">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="selectTimeInterval:" target="lG5-FS-cxL" id="f5O-Yw-LDY"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="5 minutes" tag="300" id="G0D-cb-O3s">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="selectTimeInterval:" target="lG5-FS-cxL" id="8He-Nj-hWG"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="10 minutes" tag="600" id="5q3-is-hMD">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="selectTimeInterval:" target="lG5-FS-cxL" id="zV7-LW-9mR"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="15 minutes" tag="900" id="I0h-PC-XDw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="selectTimeInterval:" target="lG5-FS-cxL" id="EsG-QZ-Wjr"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="30 minutes" tag="1800" id="fNb-pd-kVA">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="selectTimeInterval:" target="lG5-FS-cxL" id="fgg-AJ-asc"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="1 hour" tag="3600" id="c1m-ZI-wTE">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="selectTimeInterval:" target="lG5-FS-cxL" id="2Bb-2a-eCZ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="2 hours" tag="7200" id="J1f-Hi-V6a">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="selectTimeInterval:" target="lG5-FS-cxL" id="llH-3i-DBR"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="5 hours" tag="18000" id="agQ-Iv-MCa">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="selectTimeInterval:" target="lG5-FS-cxL" id="9PC-y3-cMy"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                        <connections>
+                            <outlet property="delegate" destination="lG5-FS-cxL" id="hRi-a5-wqK"/>
+                        </connections>
+                    </menu>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="3q6-XT-noN"/>
+                <menuItem title="Quit" id="sDb-2M-uJc">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quit:" target="lG5-FS-cxL" id="z4a-ey-64g"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <connections>
+                <outlet property="delegate" destination="lG5-FS-cxL" id="jvS-9P-Raj"/>
+            </connections>
+            <point key="canvasLocation" x="272" y="168.5"/>
+        </menu>
+    </objects>
+</document>

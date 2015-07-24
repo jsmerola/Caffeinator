@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8164.2"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PreferencesWindowController" customModule="Caffeinator" customModuleProvider="target">
+            <connections>
+                <outlet property="activateOnLaunchOption" destination="mBq-KJ-sBW" id="ufs-id-3rW"/>
+                <outlet property="defaultDurationOption" destination="XHS-XN-djG" id="7Zb-1T-nEa"/>
+                <outlet property="showPreferencesOnLaunchOption" destination="M20-Rp-K1M" id="oJ6-eX-dCk"/>
+                <outlet property="startAtLoginOption" destination="Bsp-Hp-6hU" id="YYv-Xf-eDu"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="vRI-Pe-FzG"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Welcome to Caffeinator" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="532" height="285"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1177"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="532" height="285"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uq7-dZ-OsP">
+                        <rect key="frame" x="20" y="175" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Uq7-dZ-OsP" secondAttribute="height" multiplier="1:1" id="d15-RY-fzR"/>
+                            <constraint firstAttribute="width" constant="90" id="y1c-zn-p2j"/>
+                        </constraints>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="AppIcon" id="m3F-Lp-xJI"/>
+                    </imageView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZHJ-AI-hXf">
+                        <rect key="frame" x="128" y="231" width="386" height="34"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="justified" title="Caffeinator is now running. You can find its icon in your menu bar. Toggle it to stop the computer and display from sleeping." id="8LJ-rc-cij">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FVG-lY-u9h">
+                        <rect key="frame" x="128" y="179" width="386" height="34"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Click the menu bar icon while pressing the Command key (⌘) to show the Caffeinator menu." id="UfZ-uB-0YF">
+                            <font key="font" size="13" name=".LucidaGrandeUI-Bold"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="Bsp-Hp-6hU">
+                        <rect key="frame" x="128" y="137" width="258" height="18"/>
+                        <buttonCell key="cell" type="check" title="Automatically start Caffeinator at login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="ZLN-DV-ktr">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="updateStartAtLoginState:" target="-2" id="irL-Dp-HEo"/>
+                        </connections>
+                    </button>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="mBq-KJ-sBW">
+                        <rect key="frame" x="128" y="114" width="204" height="18"/>
+                        <buttonCell key="cell" type="check" title="Activate Caffeinator at launch" bezelStyle="regularSquare" imagePosition="left" inset="2" id="Ypu-qK-OBI">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="updateActivateOnLaunchState:" target="-2" id="y7d-ez-vre"/>
+                        </connections>
+                    </button>
+                    <button translatesAutoresizingMaskIntoConstraints="NO" id="M20-Rp-K1M">
+                        <rect key="frame" x="128" y="90" width="301" height="18"/>
+                        <buttonCell key="cell" type="check" title="Show this message when starting Caffeinator" bezelStyle="regularSquare" imagePosition="left" inset="2" id="VO3-1X-nUw">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="updateShowPreferencesAtLaunchState:" target="-2" id="w5k-hl-a6h"/>
+                        </connections>
+                    </button>
+                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XHS-XN-djG">
+                        <rect key="frame" x="248" y="55" width="102" height="26"/>
+                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="wvX-Dp-tca">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" id="ZTG-ri-GuI">
+                                <items>
+                                    <menuItem title="Indefinitely" id="Xos-TU-Vhj"/>
+                                    <menuItem title="5 minutes" tag="300" id="TGC-RJ-FJF"/>
+                                    <menuItem title="10 minutes" tag="600" id="eug-Uf-3i6"/>
+                                    <menuItem title="15 minutes" tag="900" id="dWO-j0-1BA">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="30 minutes" tag="1800" id="PkA-Dt-oiI">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="1 hour" tag="3600" id="GgU-GW-F8X">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="2 hours" tag="7200" id="czG-QA-PKw">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                    <menuItem title="5 hours" tag="18000" id="KmC-2V-o3s">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                    </menuItem>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="updateDefaultDurationState:" target="-2" id="9a5-mN-6Bb"/>
+                        </connections>
+                    </popUpButton>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qf7-Sr-Lnf">
+                        <rect key="frame" x="128" y="60" width="107" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Default duration:" id="oDU-m2-k3C">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3FE-uf-loi">
+                        <rect key="frame" x="442" y="13" width="76" height="32"/>
+                        <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iMm-Fd-niP">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="performClose:" target="QvC-M9-y7g" id="8DD-fo-lSO"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="M20-Rp-K1M" firstAttribute="leading" secondItem="mBq-KJ-sBW" secondAttribute="leading" id="4WE-Ee-PMY"/>
+                    <constraint firstItem="FVG-lY-u9h" firstAttribute="leading" secondItem="Bsp-Hp-6hU" secondAttribute="leading" id="BUq-6d-1b6"/>
+                    <constraint firstItem="FVG-lY-u9h" firstAttribute="leading" secondItem="ZHJ-AI-hXf" secondAttribute="leading" id="EEJ-NG-psy"/>
+                    <constraint firstItem="Bsp-Hp-6hU" firstAttribute="top" secondItem="FVG-lY-u9h" secondAttribute="bottom" constant="26" id="HdV-xI-Miq"/>
+                    <constraint firstItem="Uq7-dZ-OsP" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="Juw-fx-17v"/>
+                    <constraint firstItem="M20-Rp-K1M" firstAttribute="leading" secondItem="Qf7-Sr-Lnf" secondAttribute="leading" id="K6o-UT-HdP"/>
+                    <constraint firstItem="Uq7-dZ-OsP" firstAttribute="top" secondItem="ZHJ-AI-hXf" secondAttribute="top" id="NiP-Ho-b7e"/>
+                    <constraint firstItem="FVG-lY-u9h" firstAttribute="trailing" secondItem="ZHJ-AI-hXf" secondAttribute="trailing" id="Owe-hX-HkP"/>
+                    <constraint firstItem="XHS-XN-djG" firstAttribute="leading" secondItem="Qf7-Sr-Lnf" secondAttribute="trailing" constant="17" id="Rhs-7B-cBn"/>
+                    <constraint firstItem="Qf7-Sr-Lnf" firstAttribute="top" secondItem="M20-Rp-K1M" secondAttribute="bottom" constant="15" id="SkJ-e3-wcR"/>
+                    <constraint firstAttribute="bottom" secondItem="3FE-uf-loi" secondAttribute="bottom" constant="20" id="TNd-TP-JcM"/>
+                    <constraint firstAttribute="trailing" secondItem="3FE-uf-loi" secondAttribute="trailing" constant="20" id="VB4-1f-AgG"/>
+                    <constraint firstItem="mBq-KJ-sBW" firstAttribute="leading" secondItem="Bsp-Hp-6hU" secondAttribute="leading" id="XfR-yZ-Fab"/>
+                    <constraint firstItem="mBq-KJ-sBW" firstAttribute="top" secondItem="Bsp-Hp-6hU" secondAttribute="bottom" constant="9" id="cs3-oK-9a7"/>
+                    <constraint firstAttribute="trailing" secondItem="ZHJ-AI-hXf" secondAttribute="trailing" constant="20" id="djN-k0-kfj"/>
+                    <constraint firstItem="XHS-XN-djG" firstAttribute="baseline" secondItem="Qf7-Sr-Lnf" secondAttribute="baseline" constant="-1" id="iCx-51-8wx"/>
+                    <constraint firstItem="M20-Rp-K1M" firstAttribute="top" secondItem="mBq-KJ-sBW" secondAttribute="bottom" constant="10" id="sbO-xg-HuD"/>
+                    <constraint firstItem="FVG-lY-u9h" firstAttribute="top" secondItem="ZHJ-AI-hXf" secondAttribute="bottom" constant="18" id="x4O-E6-0iA"/>
+                    <constraint firstItem="ZHJ-AI-hXf" firstAttribute="leading" secondItem="Uq7-dZ-OsP" secondAttribute="trailing" constant="20" id="xZ8-yp-lta"/>
+                    <constraint firstItem="Uq7-dZ-OsP" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="ylP-P5-zNW"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="424" y="449.5"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="AppIcon" width="128" height="128"/>
+    </resources>
+</document>

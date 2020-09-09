@@ -1,3 +1,5 @@
+This app isn't maintained, and likely doesn't even work on recent versions of macOS. You should use [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12) instead, it's really good.
+
 # Caffeinator #
 
 Caffeinator is a menu bar utility based off of Lighthead Software's [Caffeine](http://lightheadsw.com/caffeine/) and Marcel Dierkes' [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake). It allows you to prevent your Mac from going to sleep and your screen from turning off.
